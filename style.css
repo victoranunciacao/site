@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background: #e8e8e8;
+    position: relative;
+}
+
+.form__container .form__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.form__container {
+    background: white;
+    display: flex;
+    flex-flow: column wrap;
+    min-width: 400px;
+    padding:  15px 25px;
+    height: 530px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.22);
+    gap: 5px;
+}
+
+.names__label {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.form__container .form__names input,
+.form__container .email__input input {
+    outline: none;
+    border: 1px solid #d7d7d7;
+    width: 100%;
+    padding: 7px;
+    height: 38px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: .3s;
+}
+.form__container .form__names input:focus ,
+.form__container .email__input input:focus
+{
+    border: 1px solid rgb(30, 114, 218);
+}
+
+.form__questions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.span__question {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.button_question {
+    border-radius: 6px;
+    padding: 5px;
+    height: 30px;
+    background: white;
+    margin: 0px 0 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    transition: 0.3s ease;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(30, 114, 218);
+}
+.submit{
+    display: flex;
+    background: rgb(30, 114, 218);
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    width: 100%;
+    color: white;
+    height: 40px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid transparent;
+}
+
+.submit:hover {
+    border: 1px solid rgb(30, 114, 218);
+    background: #fff;
+    color: rgb(30, 114, 218)
+}
+
+.form__message input {
+    border: 1px solid #d7d7d7;
+    border-radius: 8px;
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    transition: .3s ease;
+}
+.form__message input:focus {
+    outline: none;
+    border: 1px solid rgb(30, 114, 218);
+}
+
+.panel__submit {
+    display: flex;
+    flex-flow: column wrap;
+    background: rgb(28, 107, 202);
+    border-radius: 16px;
+    padding: 30px;
+    position: absolute;
+    width: 400px;
+    color: white;
+    text-align: justify;
+    gap: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: .3s ease;
+    top: 50px;
+}

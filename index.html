@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="form__container">
+    <div class="form__title">Contact Us</div>
+
+    <div class="form__names">
+      <div class="first__name">
+        <label class="names__label">First Name</label> <br>
+        <input type="text" required>
+      </div>
+      <div class="last__name">
+        <label class="names__label">Last Name</label> <br>
+        <input type="text" required>
+      
+      </div>
+    </div>
+
+    <div class="email__input">
+      <label class="names__label">Email</label> <br>
+      <input type="email" required>
+    </div>
+ 
+    <div class="form__questions">
+      <label>Query Type</label> <br>
+      <button class="button_question">
+      <input type="radio" name="question" required>
+      <span class="span__question">
+        General Enquiry
+      </span>
+    </button>
+      <button class="button_question">
+      <input type="radio" name="question" required>
+      <span class="span__question">Support Request</span>
+    </button>
+    </div>
+
+    <div class="form__message">
+      <input type="text" placeholder="Message">
+    </div>
+    <div class="form__option">
+      <input type="checkbox" required>
+      <span>I consent to being contacted by the team</span>
+    </div>
+
+    <div class="form__submit-button">
+      <button class="submit" type="submit">Submit</button>
+    </div>
+  </div>
+
+
+</body>
+</html>
